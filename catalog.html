@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>HTML Academy: Седона_Гостиницы</title>
 </head>
 
@@ -12,7 +13,9 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <img class="logo" src="#" alt="Логотип городка Седона">
+          <a class="navigation-link" href="index.html">
+            <img class="logo" src="images/header/logo.svg" width="139" height="70" alt="Логотип городка Седона">
+          </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="index.html">Главная</a>
@@ -59,7 +62,7 @@
     </ul>
     <section class="filter">
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" name="catalog-filter">
-        <span class="filter-title">Инфраструктура:</span>
+        <h4 class="filter-title">Инфраструктура:</h4>
         <ul class="filter-list">
           <li class="filter-item">
             <label class="infrastructure">
@@ -80,7 +83,7 @@
             </label>
           </li>
         </ul>
-        <span class="filter-title">Тип жилья:</span>
+        <h4 class="filter-title">Тип жилья:</h4>
         <ul class="filter-list">
           <li class="filter-item">
             <label class="accommodation-type">
@@ -124,7 +127,7 @@
       <ul class="catalog-list">
         <li class="catalog-item">
           <a class="catalog-item-link" href="#">
-            <img class="catalog-item-image" src="#" alt="Amara Resort & Spa">
+            <img class="catalog-item-image" src="images/catalog/hotel-1.jpg" width="299" height="206" alt="Amara Resort & Spa">
             <h3 class="catalog-item-title">Amara Resort & Spa</h3>
           </a>
           <span class="catalog-item-accommodation-type">Гостиница</span>
@@ -135,7 +138,7 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item-link" href="#">
-            <img class="catalog-item-image" src="#" alt="Desert Quail Inn">
+            <img class="catalog-item-image" src="images/catalog/hotel-2.jpg" width="299" height="206" alt="Desert Quail Inn">
             <h3 class="catalog-item-title">Desert Quail Inn</h3>
           </a>
           <span class="catalog-item-accommodation-type">Гостиница</span>
@@ -146,7 +149,7 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item-link" href="#">
-            <img class="catalog-item-image" src="#" alt="Villas at Poco Diablo">
+            <img class="catalog-item-image" src="images/catalog/hotel-3.jpg" width="299" height="206" alt="Villas at Poco Diablo">
             <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
           </a>
           <span class="catalog-item-accommodation-type">Гостиница</span>
@@ -157,7 +160,7 @@
         </li>
         <li class="catalog-item">
           <a class="catalog-item-link" href="#">
-            <img class="catalog-item-image" src="#" alt="GreenTree Inn">
+            <img class="catalog-item-image" src="images/catalog/hotel-4.jpg" width="299" height="206" alt="GreenTree Inn">
             <h3 class="catalog-item-title">GreenTree Inn</h3>
           </a>
           <span class="catalog-item-accommodation-type">Гостиница</span>
@@ -167,7 +170,7 @@
           <span class="catalog-item-rating">Рейтинг: 9,2</span>
         </li>
       </ul>
-      <button class="show-more-button" type="button">Загрузить ещё</button>
+      <a class="show-more-button button" href="#">Загрузить ещё</a>
     </section>
     <section class="pages">
       <ul class="pagination">
@@ -236,7 +239,7 @@
     </section>
     <section class="footer-logo">
       <a class="footer-logo-reference" href="https://htmlacademy.ru/" target="_blank">
-        <img class="footer-logo-image" src="#" alt="Логотип HTML Academy">
+        <img class="footer-logo-image" src="images/footer/html-academy-logo.svg" width="115" height="34" alt="Логотип HTML Academy">
       </a>
     </section>
   </footer>
