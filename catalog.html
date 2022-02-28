@@ -63,7 +63,8 @@
           </li>
         </ul>
         <section class="filter">
-            <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" name="catalog-filter">
+          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get" name="catalog-filter">
+            <div class="infrastructure-container">
               <h4 class="filter-title">Инфраструктура:</h4>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -85,6 +86,8 @@
                   </label>
                 </li>
               </ul>
+            </div>
+            <div class="accommodation-type-container">
               <h4 class="filter-title">Тип жилья:</h4>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -106,9 +109,12 @@
                   </label>
                 </li>
               </ul>
+            </div>
+            <div class="filter-button-container">
               <button class="button" type="submit">Применить</button>
               <button class="button" type="reset">Сбросить</button>
-            </form>
+            </div>
+          </form>
         </section>
       </header>
       <div class="sorting-container">
@@ -116,13 +122,13 @@
         <select class="select-sorting" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
         </select>
-        <a class="button" href="#">
+        <a class="button-icon button" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="button" href="#">
+        <a class="button-icon button" href="#">
           <span class="visually-hidden">Показать слайдшоу</span>
         </a>
-        <a class="button" href="#">
+        <a class="button-icon button" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
       </div>
@@ -200,12 +206,14 @@
             <a class="pagination-link pagination" href="#">10</a>
           </li>
         </ul>
-        <span class="select">Гостиниц на&nbsp;странице:</span>
-        <select class="select-number" aria-label="Количество гостиниц на странице">
-          <option value="4">4</option>
-        </select>
+        <div class="pagination-show-more">
+          <span class="select">Гостиниц на&nbsp;странице:</span>
+          <select class="select-number" aria-label="Количество гостиниц на странице">
+            <option value="4">4</option>
+          </select>
+        </div>
       </section>
-      <section class="newsletter-catalog">
+      <section class="newsletter newsletter-catalog">
         <h2 class="newsletter-title">
           Подпишитесь на&nbsp;рассылку
         </h2>
