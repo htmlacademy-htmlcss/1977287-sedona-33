@@ -100,6 +100,7 @@ body {
   text-decoration: none;
 }
 
+
 .logo {
   display: block;
   margin-right: 30px;
@@ -199,7 +200,6 @@ body {
   max-width: 100%;
   display: flex;
   flex-direction: row-reverse;
-  align-content: flex-start;
 }
 
 .advantages-list li:nth-child(1)::before {
@@ -543,6 +543,22 @@ justify-content: end;
   padding: 20px;
 }
 
+.catalog-item-wrapper {
+  display: flex;
+}
+.catalog-item-wrapper-first-column {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 25px;;
+
+}
+
+.catalog-item-wrapper-second-column {
+  display: flex;
+  flex-direction: column;
+
+}
 
 .catalog-item:nth-child(3n) {
   margin-right: 0;
@@ -557,6 +573,9 @@ justify-content: end;
   font-size: 24px;
   font-weight: 700;
   line-height: 31px;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .catalog-item-acommodation-type,
@@ -566,8 +585,16 @@ justify-content: end;
   line-height: 23px;
 }
 
+.catalog-item-more-button {
+  margin-top: 16px;
+}
+
+.catalog-item-price {
+  margin-bottom: 16px;
+}
 
 .catalog-item-favorites-button {
+  margin-bottom: 16px;
   text-transform: uppercase;
 }
 
