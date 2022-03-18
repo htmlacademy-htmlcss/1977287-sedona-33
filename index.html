@@ -89,24 +89,24 @@
             </div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Жилье</h3>
-            <p class="advantages-description">
+            <h3 class="advantages-title no-order-title">Жилье</h3>
+            <p class="advantages-description no-order-description">
               Рекомендуем пожить
               в&nbsp;настоящем мотеле,<br>
               всё как в&nbsp;кино!
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Еда</h3>
-            <p class="advantages-description">
-              Всегда заказывайте
+            <h3 class="advantages-title no-order-title">Еда</h3>
+            <p class="advantages-description no-order-description">
+              Всегда заказывайте <br>
               топовый фирменный бургер,
               вы&nbsp;не&nbsp;разочаруетесь!
             </p>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-title">Сувениры</h3>
-            <p class="advantages-description">
+            <h3 class="advantages-title no-order-title">Сувениры</h3>
+            <p class="advantages-description no-order-description">
               Не&nbsp;только китайского,
               но&nbsp;и&nbsp;настоящего местного производства!
             </p>
@@ -221,19 +221,9 @@
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
-              <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="20" height="16"
-                viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)">
-                  <path
-                    d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"
-                    fill="#83B3D3" />
-                </g>
-                <defs>
-                  <clipPath>
-                    <path fill="#fff" d="M0 0h20v16H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
+              <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" fill="#83B3D3"/>
+                </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -254,6 +244,40 @@
       </section>
     </div>
   </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-search">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="search-label">Дата заезда:</label>
+            <input class="search-form-field field" type="text" name="check-in" placeholder="Укажите дату">
+          <span class="search-warning check-in-warning">Мы не можем отправить вас в прошлое.</span>
+          </p>
+          <p class="field-group">
+            <label class="search-label">Дата выезда:</label>
+            <input class="search-form-field field" type="text" name="check-out" placeholder="Укажите дату">
+          <span class="search-warning check-out-warning">На эти даты есть свободные номера. Пока есть.</span>
+          </p>
+          <p class="field-group">
+            <label class="search-label">Взрослые:</label>
+            <input class="search-form-field field" type="text" name="adults" placeholder="2">
+          </p>
+          <p class="field-group">
+            <label class="search-label">Дети:</label>
+            <input class="search-form-field field" type="text" name="children" placeholder="1">
+          </p>
+          <button class="button modal-search-button blue-button" type="submit">
+            Найти
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
+
 </body>
 
 </html>
