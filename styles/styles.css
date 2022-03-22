@@ -708,6 +708,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
+  z-index: 3;
   width: 100%;
   height: 100%;
   background-color:  rgba(242, 242, 242, 0.8);
@@ -733,9 +734,9 @@ body {
 
 .modal-close-button {
   position: absolute;
+  left: 590px;
+  top: 54px;
   padding: 0;
-  top: 50px;
-  right: 70px;
   width: 53px;
   height: 53px;
   border: none;
@@ -751,6 +752,7 @@ body {
 .modal-close-button:focus {
   background-color: #E6E6E6;
   border: 3px solid #83B3D3;
+  outline: none;
 }
 
 .modal-close-button:active svg {
@@ -760,7 +762,6 @@ body {
 
 .modal-title {
   margin: 0;
-  margin-bottom: 64px;
   font-family: "PT Sans";
   font-size: 30px;
   line-height: 40px;
@@ -769,7 +770,15 @@ body {
   text-transform: uppercase;
 }
 
+.modal-title-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
 .field-group {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   margin: 0;
   margin-bottom: 19px;
@@ -780,9 +789,17 @@ body {
   font-weight: 700;
 }
 
+.modal-input {
+  width: 100%;
+  max-width: 420px;
+}
+
+
+
 .form-label-icon {
   position: relative;
   padding-right: 25px;
+  margin-right: 7px;
 }
 
 
@@ -806,12 +823,6 @@ body {
 
 
 
-.tooltip {
-  position: absolute;
-  width: 256px;
-  height: 143px;
-}
-
 .tooltip-toggle {
   width: 25px;
   height: 25px;
@@ -820,7 +831,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  left: 0;
+  left: 53px;
 }
 
 .tooltip-icon {
@@ -833,6 +844,12 @@ body {
 .tooltip-toggle:hover {
   background-color:  #68A2CA;
 }
+
+.tooltip-toggle:focus {
+  background-color:  #68A2CA;
+  outline: none;
+}
+
 
 .tooltip-text {
   background-color: #242424;
@@ -848,7 +865,7 @@ body {
   z-index: 1;
   position: absolute;
   top: 40px;
-  left: 0;
+  left: -61px;
   display: none;
 }
 
@@ -883,12 +900,28 @@ body {
   background-color: #F2F2F2;
 }
 
-.adults-children-inputs-wrap {
+.adults-children-field:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: #F2F2F2;
+}
+
+
+.adults-children-inputs {
   display: flex;
+}
+
+.adults {
+  margin-left: 72px;
+}
+
+.children {
+  margin-left: 20px;
 }
 
 .plus-button,
 .minus-button {
+  position: relative;
   width: 40px;
   height: 50px;
   box-sizing: border-box;
@@ -901,6 +934,7 @@ body {
 .minus-button {
   border-radius: 4px 0px 0px 4px;
 }
+
 
 .plus-button:hover path {
   fill: #000000;
@@ -918,14 +952,34 @@ body {
   fill: #000000;
 }
 
-.plus-button:focus svg {
- border: 3px solid #83B3D3;
- border-radius: 4px;
+.plus-button:focus {
+  outline: none;
 }
 
-.minus-button:focus svg {
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
+.minus-button:focus {
+  outline: none;
+}
+
+.plus-button:focus::before {
+  content: '';
+  background-image: url(../images/modal/border.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+
+
+}
+
+.minus-button:focus::before  {
+  content: '';
+  background-image: url(../images/modal/border.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
   }
 
 .plus-button:active path {
@@ -948,6 +1002,7 @@ body {
 
 .modal-search-wrap {
   display: flex;
+  justify-content: space-between;
 }
 
 .modal-search-button {
@@ -1135,9 +1190,9 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.infrastructure:focus .control-mark {
+.infrastructure-input:focus + .control-mark {
   background: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .infrastructure:active .control-mark {
@@ -1170,8 +1225,10 @@ body {
 }
 
 
-.accommodation-type:focus .control-mark {
-  border: 3px solid #83B3D3;
+.accommodation-type-input:focus + .control-mark {
+  box-shadow: 0 0 0 3px #83B3D3;
+  box-sizing: border-box;
+
 }
 
 .range-container {
@@ -1444,6 +1501,7 @@ body {
 
 .select-number {
   width: 100%;
+  min-width: 160px;
   max-width: 160px;
   padding: 16px 17px;
   padding-right: 48px;
@@ -1459,6 +1517,7 @@ body {
 }
 
 .select-number-hotels {
+  margin-top: 15px;
   margin-right: 51px;
 }
 
@@ -1760,6 +1819,7 @@ body {
 
 .pagination-show-more {
   display: flex;
+  white-space: nowrap;
   margin-left: auto;
 }
 
