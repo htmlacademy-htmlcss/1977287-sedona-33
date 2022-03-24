@@ -77,15 +77,16 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <div class="advantages-item-wrapper">
-              <h3 class="advantages-title">
+              <h3 class="advantages-title picture-item-title">
                 Настоящий
                 городок
               </h3>
-              <span class="advantages-order">
+              <div class="advantages-order advantages-order-picture">
                 &mdash;&nbsp;&#8470;1 &mdash;
-              </span>
-              <p class="advantages-description">
-                Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт
+              </div>
+              <p class="advantages-description advantages-description-picture">
+                Седона&nbsp;&mdash; не&nbsp;аттракцион <br>
+                для туристов, там течёт <br>
                 своя жизнь
               </p>
             </div>
@@ -115,13 +116,13 @@
           </li>
           <li class="advantages-item">
             <div class="advantages-item-second-wrapper">
-              <h3 class="advantages-title">
+              <h3 class="advantages-title picture-item-title">
                 Там есть
                 мост дьявола</h3>
-              <span class="advantages-order">
+              <div class="advantages-order advantages-order-picture">
                 &mdash;&nbsp;&#8470;2 &mdash;
-              </span>
-              <p class="advantages-description">
+              </div>
+              <p class="advantages-description advantages-description-picture">
                 Да, по&nbsp;нему можно пройти! Если вы&nbsp;осмелитесь, разумеется
               </p>
             </div>
@@ -131,9 +132,9 @@
               Небольшая
               площадь
             </h3>
-            <span class="advantages-order">
+            <div class="advantages-order">
               &mdash;&nbsp;&#8470;3 &mdash;
-            </span>
+            </div>
             <p class="advantages-description">
               Все достопримечательности
               находятся очень близко
@@ -144,9 +145,9 @@
               Красивая
               дорога
             </h3>
-            <span class="advantages-order">
+            <div class="advantages-order">
               &mdash;&nbsp;&#8470;4 &mdash;
-            </span>
+            </div>
             <p class="advantages-description">
               Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
             </p>
@@ -156,9 +157,9 @@
               Мало
               туристов
             </h3>
-            <span class="advantages-order">
+            <div class="advantages-order">
               &mdash;&nbsp;&#8470;5 &mdash;
-            </span>
+            </div>
             <p class="advantages-description">
               Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там
             </p>
@@ -168,17 +169,17 @@
       <section class="hotels">
         <h2 class="hotels-search">Заинтересовались?</h2>
         <p class="hotels-options">
-          Укажите предполагаемые даты поездки,
+          Укажите предполагаемые даты поездки, <br>
           и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
         </p>
         <a class="hotels-search-button brown-button button" href="#">Поиск гостиницы в&nbsp;Седоне</a>
       </section>
       <section class="newsletter newsletter-index">
-        <h2 class="newsletter-title">
+        <h2 class="newsletter-title newsletter-title-index">
           Подпишитесь на&nbsp;рассылку
         </h2>
         <p class="newsletter-description">
-          Только полезная информация и&nbsp;никакого спама,
+          Только полезная информация и&nbsp;никакого спама, <br>
           честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post" name="email">
@@ -193,6 +194,7 @@
   <footer class="main-footer">
     <div class="page-footer-container">
       <section class="footer-social">
+        <h4 class="visually-hidden">Социальные сети</h4>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru" target="_blank">
@@ -235,9 +237,11 @@
         </ul>
       </section>
       <section class="footer-contacts">
+        <h4 class="visually-hidden">Номер телефона</h4>
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <section class="footer-logo">
+        <h4 class="visually-hidden">Создано в HTML Academy</h4>
         <a class="footer-logo-reference" href="https://htmlacademy.ru/" target="_blank">
           <svg class="footer-logo-icon" aria-hidden="true" focusable="false" width="115" height="33" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -249,7 +253,7 @@
       </section>
     </div>
   </footer>
-  <div class="modal-container modal-container-close ">
+  <div class="modal-container  modal-container-close">
     <div class="modal modal-search">
       <section class="modal-content">
         <div class="modal-title-wrap">
@@ -265,7 +269,7 @@
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="modal-date">
             <div class="field-group">
-              <label class="form-label">Дата заезда:</label>
+              <label class="form-label label-check-in">Дата заезда:</label>
               <div class="modal-input">
                 <input class="search-form-field field" type="text" id="check-in" name="check-in"
                   placeholder="Укажите дату" value="27 апреля 2020">
@@ -273,9 +277,9 @@
               </div>
             </div>
             <div class="field-group">
-              <label class="form-label">Дата выезда:</label>
+              <label class="form-label label-check-out">Дата выезда:</label>
               <div class="modal-input">
-                <input class="search-form-field field" type="text" id="check-out" name="check-out"
+                <input class="search-form-field field check-out-field" type="text" id="check-out" name="check-out"
                   placeholder="Укажите дату" value="1 сентября 2021">
                 <p class="search-warning success-warning">На эти даты есть свободные номера. Пока есть.</p>
               </div>
@@ -283,7 +287,7 @@
           </div>
           <div class="modal-search-wrap">
             <div class="field-group">
-              <label class="form-label">Взрослые:</label>
+              <label class="form-label label-adults">Взрослые:</label>
               <div class="adults-children-inputs adults">
                 <button class="minus-button button" type="button">
                   <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +303,7 @@
               </div>
             </div>
             <div class="field-group">
-              <label class="form-label form-label-icon" for="children">Дети:</label>
+              <label class="form-label form-label-icon label-children" for="children">Дети:</label>
               <button class="tooltip-toggle" aria-labelledby="tooltip-label" type="button">
                 <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#a)" fill="#fff">
