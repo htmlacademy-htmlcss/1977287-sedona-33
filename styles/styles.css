@@ -239,6 +239,7 @@ body {
 
 
 .main-title {
+  background-color: #6c879e;
   background-image:url("../images/index/divider.svg"),
     url("../images/index/index-background-1.jpg");
   background-size: 100% auto, cover;
@@ -407,31 +408,49 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
-  max-width: 180px;
+  max-width: 172px;
   text-transform: uppercase;
 }
 
+.picture-item-title {
+  margin-top: 12px;
+}
+
 .no-order-title {
-  margin: 0;
+  margin-bottom: -10px;
 }
 
 .advantages-order {
+
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+}
+
+.advantages-order-picture {
+  margin-top: 27px;
 }
 
 .advantages-description {
   width: 100%;
   margin: 0 auto;
   margin-top: 27px;
+  margin-bottom: 10px;
   max-width: 250px;
-  font-size: 18px 21px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 400;
 }
 
+.advantages-description-picture {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
 .no-order-description {
-  margin-top: 20px;
+  margin-top: 29px;
+  margin-bottom: 0;
+
 }
 
 
@@ -466,8 +485,8 @@ body {
 .hotels-options {
   margin: 0 auto;
   margin-top: 36px;
-  max-width: 520px;
-  margin-bottom: 30px;
+  max-width: 720px;
+  margin-bottom: 55px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -476,20 +495,23 @@ body {
 
 .newsletter {
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 90px;
   max-width: 1200px;
   text-align: center;
 }
 
 .newsletter-index {
+  padding-top: 100px;
+  padding-bottom: 95px;
   color:#ffffff;
+  background-color: #496d82;
   background-image: url(../images/index/index-background-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .newsletter-catalog {
+  padding-top: 80px;
+  padding-bottom: 140px;
   color:#000000;
 }
 
@@ -500,11 +522,18 @@ body {
   text-transform: uppercase;
 }
 
+.newsletter-title-index {
+  margin-bottom: 38px;
+}
+.newsletter-title-catalog {
+  margin-bottom: 55px;
+}
+
+
 .newsletter-description {
   width: 100%;
   max-width: 650px;
   margin: 0 auto;
-  margin-top: 40px;
   margin-bottom: 46px;
   font-size: 22px;
   line-height: 26px;
@@ -554,7 +583,11 @@ body {
 
 .field:focus {
   background-color: #E6E6E6;
-  box-shadow: 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+}
+
+.field:focus-within:invalid {
+  box-shadow: inset 0 0 0 3px #FF5757;
 }
 
 
@@ -578,15 +611,15 @@ body {
   max-width: 160px;
   padding: 0;
   margin-right:  auto;
-  margin-left: 72px;
+  margin-left: 62px;
 
 }
 
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
-  margin-bottom: 53px;
+  margin-top: 35px;
+  margin-bottom: 60px;
   padding: 0;
   list-style-type: none;
 }
@@ -640,6 +673,8 @@ body {
 
 .footer-contacts-phone {
   padding: 15px;
+  height: 50px;
+  margin-bottom: 3px;
 }
 
 
@@ -665,7 +700,7 @@ body {
   display: block;
   width:100%;
   max-width: 160px;
-  margin-right: 72px;
+  margin-right: 62px;
   margin-left: auto;
 }
 
@@ -696,11 +731,9 @@ body {
 
 .footer-logo-reference {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 22px;
+  right: -12px;
   bottom: 0;
-  left: 0;
-  margin: auto;
   width: 160px;
   height: 70px;
 }
@@ -780,7 +813,11 @@ body {
 .modal-title-wrap {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 64px;
+  margin-bottom: 28px;
+}
+
+.modal-date {
+  margin-top: 60px;
 }
 
 .field-group {
@@ -788,12 +825,28 @@ body {
   justify-content: space-between;
   position: relative;
   margin: 0;
-  margin-bottom: 19px;
 }
 
 .form-label {
   font: inherit;
   font-weight: 700;
+  margin-top: 15px;
+}
+
+.label-check-out {
+  margin-top: 20px;
+}
+
+.label-adults {
+  margin-top: 20px;
+}
+
+.label-children {
+  margin-top: 20px;
+}
+
+.check-out-field {
+  margin-top: 5px;
 }
 
 .modal-input {
@@ -838,6 +891,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
+  top: 20px;
   left: 53px;
 }
 
@@ -871,8 +925,8 @@ body {
   width: 216px;
   z-index: 1;
   position: absolute;
-  top: 40px;
-  left: -61px;
+  top: 60px;
+  left: -60px;
   display: none;
 }
 
@@ -916,6 +970,7 @@ body {
 
 .adults-children-inputs {
   display: flex;
+  margin-top: 5px;
 }
 
 .adults {
@@ -1001,6 +1056,8 @@ body {
 
 .search-warning {
   margin: 0;
+  font-size: 16px;
+  line-height: 40px;
 }
 
 .error-warning {
@@ -1010,6 +1067,7 @@ body {
 .modal-search-wrap {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .modal-search-button {
@@ -1038,11 +1096,12 @@ body {
 }
 
 .inner-header {
+  background-color: #4b6075;
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 35px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
 }
 
 .breadcrumbs {
@@ -1065,8 +1124,8 @@ body {
   position:absolute;
   width: 6px;
   height: 8px;
-  right: -40px;
-  top: 8px;
+  right: -37px;
+  top: -5px;
   content: '';
   background-image: url(../images/catalog/breadcrumbs-nav-arrow.svg);
   background-repeat: no-repeat;
@@ -1084,7 +1143,7 @@ body {
 
 .breadcrumbs-index {
   position: absolute;
-  top: -3px;
+  top: -15px;
   margin-right: 10px;
   width: 28px;
   height: 27px;
@@ -1111,7 +1170,8 @@ body {
   box-sizing: border-box;
   width: 89px;
   height: 27px;
-  left: 35px;
+  top: -12px;
+  left: 30px;
   margin-left: 10px;
 }
 
@@ -1130,7 +1190,6 @@ body {
   display: flex;
   margin-right: 72px;
   margin-left: 71px;
-  margin-bottom: 86 px;
 }
 
 .filter-form {
@@ -1139,13 +1198,18 @@ body {
 
 .filter-title {
   margin-right: 67px;
-  margin-bottom: 17px;
+  margin-top: 39px;
+  margin-bottom: 27px;
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
   color: #ffffff;
   width: 100%;
+}
+
+.filter-title-price {
+  margin-bottom: 35px;
 }
 
 .filter-list {
@@ -1164,7 +1228,7 @@ body {
 .infrastructure {
   position: relative;
   display: block;
-  padding-left: 39px;
+  padding-left: 41px;
 }
 
 
@@ -1210,7 +1274,7 @@ body {
 .accommodation-type {
   position: relative;
   display: block;
-  padding-left: 39px;
+  padding-left: 41px;
 }
 
 
@@ -1247,7 +1311,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 32px;
+  margin-top: 28px;
   width: 287px;
   background-color: #E6E6E6;
 }
@@ -1284,7 +1348,6 @@ body {
 .toggle-max {
   top: -8px;
   right:-10px;
-  left: 227px;
 }
 
 .range-wrapper-inputs {
@@ -1309,14 +1372,14 @@ body {
 
 .min-hotel-price {
   position: absolute;
-  top: 14px;
-  left: 110px;
+  top: 12px;
+  left: 112px;
 }
 
 .max-hotel-price {
   position: absolute;
-  top: 14px;
-  right: 13px;
+  top: 12px;
+  right: 15px;
 }
 
 .range-input {
@@ -1378,7 +1441,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: end;
-  margin-top: 70px;
+  margin-top: 100px;
   margin-left: 81px;
  }
 
@@ -1390,7 +1453,7 @@ body {
    border-radius: 4px;
    width: 160px;
    height: 48px;
-   margin-bottom: 20px;
+   margin-bottom: 15px;
    font-size: 16px;
    line-height: 21px;
 
@@ -1440,10 +1503,11 @@ body {
 .founded-hotels {
   width: 100%;
   margin: 0;
-  margin-right: 191px;
+  margin-top: 4px;
+  margin-right: 190px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 39px;
+  line-height: 40px;
   text-transform: uppercase;
 }
 
@@ -1451,11 +1515,11 @@ body {
 .sorting-container {
   display: flex;
   width:100%;
-  max-width: 1057px;
-  margin-right: 72px;
-  margin-left: 71px;
+  max-width: 1060px;
+  margin-right: 70px;
+  margin-left: 70px;
   margin-top: 44px;
-  margin-bottom: 53px;
+  margin-bottom: 48px;
 }
 
 .sorting-container a {
@@ -1481,8 +1545,10 @@ body {
 
 .select-sorting {
   width: 287px;
-  padding: 13px 19px;
+  height: 48px;
   padding-right: 48px;
+  padding-left: 16px;
+  padding-bottom: 3px;
   font: inherit;
   font-weight: 400;
   background-color: #ffffff;
@@ -1490,7 +1556,7 @@ body {
   border-radius: 4px;
   background-image: url("../images/catalog/dropdown.svg");
   background-repeat: no-repeat;
-  background-position: right 16px center;
+  background-position: right 20px center;
   appearance: none;
 }
 
@@ -1544,9 +1610,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 48px;
-  height: 48px;
-  margin-right: 8px;
+  max-width: 45px;
+  height: 45px;
+  margin-right: 10px;
   box-shadow: 0 0 0 2px #E6E6E6;
   border-radius: 4px;
 }
